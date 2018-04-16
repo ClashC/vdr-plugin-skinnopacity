@@ -1,0 +1,13 @@
+--- a/displaychannel.c
++++ b/displaychannel.c
+@@ -11,8 +11,8 @@
+     if (firstDisplay) {
+         imgCache->CreateCacheDelayed();
+         firstDisplay = false;
+-        doOutput = false;
+-        return;
++        doOutput = true;
++        //return;
+     } else
+         doOutput = true;
+     groupSep = false;
